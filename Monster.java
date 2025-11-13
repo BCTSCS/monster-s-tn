@@ -4,6 +4,13 @@ public class Monster {
     private int eyes;
     private int buttons;
     private String name;
+    public static void main(String[] args) {
+        Monster defaultArgs = new Monster();
+        Monster paramArgs = new Monster(4, 2, 4, 3, "Joe");
+
+        System.out.println(defaultArgs);
+        System.out.println(paramArgs);
+    }
     public Monster() {
         this.arms = 0;
         this.legs = 0;
